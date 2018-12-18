@@ -1,0 +1,46 @@
+{
+  "name": "join-sentences",
+  "description": "Join an array of sentences, adding punctuation when missing.",
+  "homepage": "https://github.com/flesch/join-sentences",
+  "version": "1.0.0-rc.1",
+  "main": "./dist/index.js",
+  "author": {
+    "email": "john@fles.ch",
+    "name": "John Flesch",
+    "url": "https://fles.ch/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flesch/join-sentences.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flesch/join-sentences/issues"
+  },
+  "keywords": [
+    "combine",
+    "english",
+    "join",
+    "language",
+    "paragraph",
+    "punctuation",
+    "sentence",
+    "word"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "prettier": "^1.14.3"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepare": "npm run prettier && npm run build",
+    "prettier": "prettier --write \"**/*.js\""
+  },
+  "license": "MIT"
+}
